@@ -1,7 +1,7 @@
 import torch
 from d2l import torch as d2l
 
-# 常见激活函数
+# 常见激活函数abc
 
 
 x = torch.arange(-8.0, 8.0, 0.1, requires_grad=True)
