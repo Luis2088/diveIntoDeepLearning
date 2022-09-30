@@ -18,9 +18,7 @@ def read_time_machine():
 
 lines = read_time_machine()
 print(f'# 文本总行数:{len(lines)}')
-
-
-# print(numpy.array(lines).reshape(-1, 1)[:10])
+print(lines[:10])
 
 
 # 词元化

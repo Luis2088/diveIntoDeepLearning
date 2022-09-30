@@ -133,9 +133,9 @@ print(valid_dataset.mode, valid_dataset.__len__())
 print(test_dataset.mode, test_dataset.__len__())
 
 # def data loader
-train_loader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=8, shuffle=False, num_workers=0)
-valid_loader = torch.utils.data.DataLoader(dataset=valid_dataset, batch_size=8, shuffle=False, num_workers=0)
-test_loader = torch.utils.data.DataLoader(dataset=test_dataset, batch_size=8, shuffle=False, num_workers=0)
+train_loader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=64, shuffle=False, num_workers=0)
+valid_loader = torch.utils.data.DataLoader(dataset=valid_dataset, batch_size=64, shuffle=False, num_workers=0)
+test_loader = torch.utils.data.DataLoader(dataset=test_dataset, batch_size=64, shuffle=False, num_workers=0)
 
 
 # 展示数据
@@ -188,7 +188,7 @@ def res_model(num_classes, feature_extract=False, use_pretrained=True):
 # 超参数
 learning_rate = 3e-4
 weight_decay = 1e-3
-num_epoch = 50
+num_epoch = 10
 model_path = './pre_res_model.ckpt'
 
 # 初试化模型
